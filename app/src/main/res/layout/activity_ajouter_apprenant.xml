@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_screen_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titre_formulaire"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/pink_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sous_titre_formulaire"
+            android:textSize="14sp"
+            android:textColor="@color/text_hint"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_card_rounded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nom"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/pink_dark"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/hint_nom"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_hint"
+                android:backgroundTint="@color/pink_light"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_prenom"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/pink_dark"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/hint_prenom"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="@color/text_main"
+                android:textColorHint="@color/text_hint"
+                android:backgroundTint="@color/pink_light"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_ville"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/pink_dark"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:entries="@array/villes"
+                android:backgroundTint="@color/pink_light"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_sexe"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/pink_dark"
+                android:layout_marginBottom="10dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="26dp">
+
+                <RadioButton
+                    android:id="@+id/m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/homme"
+                    android:textColor="@color/text_main"
+                    android:buttonTint="@color/pink_primary" />
+
+                <RadioButton
+                    android:id="@+id/f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/femme"
+                    android:textColor="@color/text_main"
+                    android:layout_marginStart="24dp"
+                    android:buttonTint="@color/pink_primary" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/btn_ajouter"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_gradient"
+                android:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

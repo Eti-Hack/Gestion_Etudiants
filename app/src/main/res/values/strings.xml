@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppApprenants</string>
+    <string name="titre_formulaire">Ajouter un apprenant</string>
+    <string name="sous_titre_formulaire">Remplissez les informations du formulaire</string>
+    <string name="label_nom">Nom</string>
+    <string name="label_prenom">Prénom</string>
+    <string name="label_ville">Ville</string>
+    <string name="label_sexe">Sexe</string>
+    <string name="hint_nom">Entrer le nom</string>
+    <string name="hint_prenom">Entrer le prénom</string>
+    <string name="btn_ajouter">Ajouter</string>
+    <string name="homme">Homme</string>
+    <string name="femme">Femme</string>
+
+    <string-array name="villes">
+        <item>Choisir une ville</item>
+        <item>Fes</item>
+        <item>Rabat</item>
+        <item>Casablanca</item>
+        <item>Marrakech</item>
+        <item>Agadir</item>
+        <item>Tanger</item>
+    </string-array>
+</resources>
